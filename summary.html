@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <button class="logout-btn" id="logoutBtn">Logout</button>
+
   <div class="summary-container">
     <h1 class="page-title">Total Task Summary</h1>
     
@@ -18,6 +21,12 @@
       <button onclick="window.location.href='task-form.html'" class="task-button">Back to Tasks</button>
     </div>
   </div>
+
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+      window.location.href = 'login.html';
+    });
+  </script>
 
   <script src="js/summary.js"></script>
 </body>
