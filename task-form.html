@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Form - QuickTask Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2 class="page-title">Task Form</h2>
+
+  <div class="task-container">
+    <form id="taskForm">
+      <div class="input-row">
+        <input type="text" id="taskTitle" placeholder="Task Title" required />
+        <input type="date" id="dueDate" placeholder="Due Date" required />
+      </div>
+      <input type="text" id="description" placeholder="Description" required />
+      <div class="button-row">
+        <button type="submit" class="task-button">Add Task</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="all-tasks-btn">
+    <button class="task-button">All Tasks</button>
+  </div>
+
+  <script src="js/task-form.js"></script>
+</body>
+</html>
